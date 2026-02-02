@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(powershell:*)",
+      "Bash(ls:*)",
+      "Bash(tree:*)",
+      "Bash(npx vercel:*)",
+      "WebSearch",
+      "WebFetch(domain:threejs.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:thebookofshaders.com)",
+      "WebFetch(domain:shadertoy.com)",
+      "WebFetch(domain:codepen.io)",
+      "WebFetch(domain:docs.pmnd.rs)",
+      "WebFetch(domain:codesandbox.io)",
+      "WebFetch(domain:gsap.com)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs"
+    ],
+    "deny": [],
+    "ask": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git checkout:*)",
+      "Bash(git rm:*)",
+      "Bash(git clean:*)"
+    ]
+  }
+}
