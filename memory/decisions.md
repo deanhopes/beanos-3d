@@ -23,3 +23,28 @@ Architectural choices and reasoning. Don't re-debate these unless requirements c
 
 **Decision:** Zustand for global state.
 **Reasoning:** Lightweight, no boilerplate, works perfectly with R3F's render loop. One store file, flat state.
+
+## 2026-02-02 — Zones: 2-3, not 4
+
+**Decision:** Ship v1 with 2 zones (Forge + Core), maybe 3. Cut Easter eggs.
+**Reasoning:** Agent review (design-philosopher + ultrathink) flagged scope risk. Build one zone to 90% before starting another. Quality > quantity.
+
+## 2026-02-02 — Post-processing: Combined passes
+
+**Decision:** Combine grain + vignette + chromatic aberration + dither into ONE shader pass. Half-res bloom. DoF transition-only.
+**Reasoning:** 12 full-screen passes won't hit 60fps. 2-3 passes max. Performance is design.
+
+## 2026-02-02 — Mobile: Map mode only
+
+**Decision:** No WASD/world mode on mobile. Map view with touch navigation.
+**Reasoning:** Touch + first-person 3D is a bad UX. Map mode works on any screen. World mode is desktop reward.
+
+## 2026-02-02 — Totems: Hand-drawn by Dean
+
+**Decision:** Dean hand-draws the zone icons/totems. Not procedurally generated.
+**Reasoning:** Personal marks can't be replicated. Adds the soulful contrast to digital precision. Scanned and used as textures.
+
+## 2026-02-02 — Transition is priority #1
+
+**Decision:** Map-to-world transition is THE make-or-break moment. Invest disproportionate time here.
+**Reasoning:** Agent review identified this as the single element that defines whether the experience feels premium or gimmicky. The dither shader drives it.
